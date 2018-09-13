@@ -381,7 +381,7 @@ export default class SchedulerData {
                 
             //reload
             rule = rrulestr(rule.toString());
-            if (item.exdata || item.exrule)
+            if (item.exdates || item.exrule)
             {
                 const rruleSet = new RRuleSet()    
                 rruleSet.rrule(rule);   
